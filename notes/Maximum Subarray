@@ -1,0 +1,7 @@
+题目： Maximum Subarray
+题型： Greedy / DP 思想
+核心思路： 维护以当前位置结尾的最大连续和；如果前面的和拖后腿，就从当前元素重新开始
+状态转移： currentSum = max(nums[i], currentSum + nums[i])
+时间复杂度： O(n)
+空间复杂度： O(1)
+易错点： 不是围绕最大值向两边扩；负数前缀可能要丢掉；全负数组也要正确处理
